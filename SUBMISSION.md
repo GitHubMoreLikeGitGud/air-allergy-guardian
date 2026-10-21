@@ -124,4 +124,4 @@ workaround and suggestion).
 ## Links
 
 - Repository: https://github.com/GitHubMoreLikeGitGud/air-allergy-guardian
-- Demo video: VIDEO_URL_TBD
+- Demo video: https://youtu.be/Naj3bvWCyTo
