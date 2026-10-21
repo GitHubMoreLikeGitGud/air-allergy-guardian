@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "id": 1880252,
+      "name": "Singapore",
+      "latitude": 1.28967,
+      "longitude": 103.85007,
+      "elevation": 23,
+      "feature_code": "PPLC",
+      "country_code": "SG",
+      "timezone": "Asia/Singapore",
+      "population": 5638700,
+      "country_id": 1880251,
+      "country": "Singapore"
+    }
+  ],
+  "generationtime_ms": 0.20182133
+}

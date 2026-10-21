@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "home": {
+    "latitude": 1.2838,
+    "longitude": 103.8591,
+    "label": "central Singapore"
+  },
+  "members": [
+    { "name": "Mei", "conditions": ["asthma"] },
+    { "name": "Dev", "conditions": ["pollen_allergy"], "pollen": ["grass", "birch"] },
+    { "name": "Alex", "conditions": ["none"] }
+  ],
+  "alertRules": [
+    { "id": "mei:pm2_5", "member": "Mei", "metric": "pm2_5", "above": 35 }
+  ],
+  "lastFired": {},
+  "symptoms": []
+}

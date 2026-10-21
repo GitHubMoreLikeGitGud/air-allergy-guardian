@@ -1,0 +1,21 @@
+{
+  "name": "air-allergy-guardian",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A simulated Alexa+ experience backed by a real MCP server: household air-quality and pollen guardian",
+  "license": "MIT",
+  "author": "Umar Mohktar",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "dev:server": "npm run dev -w @aag/mcp-server",
+    "dev:sim": "npm run dev -w @aag/simulator"
+  }
+}

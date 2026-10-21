@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%2338bdf8'/%3E%3C/svg%3E" />
+    <title>Air &amp; Allergy Guardian simulator</title>
+  </head>
+  <body>
+    <div class="device">
+      <div class="screen" id="screen">
+        <header class="top">
+          <div class="clock">
+            <div class="time" id="time">--:--</div>
+            <div class="date" id="date"></div>
+          </div>
+          <div class="glance" id="glance" title="Latest reading from the MCP server">Air now: checking</div>
+          <div class="sim-label">Simulated Alexa+ experience</div>
+        </header>
+        <main class="transcript" id="transcript" aria-live="polite"></main>
+        <footer class="bar">
+          <form class="ask" id="ask-form" autocomplete="off">
+            <button type="button" class="mic" id="mic" title="Talk" aria-label="Talk">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <rect x="9" y="3" width="6" height="12" rx="3" fill="currentColor" />
+                <path d="M6 11a6 6 0 0 0 12 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M12 17v4M9 21h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <input id="ask-input" type="text" placeholder="Ask the guardian, e.g. Is it okay for Mei to go outside?" maxlength="300" />
+            <button type="submit" class="send" id="send">Ask</button>
+            <button type="button" class="mute" id="mute" aria-pressed="false">Voice on</button>
+          </form>
+          <div class="status" id="status" role="status"></div>
+          <div class="lightbar" id="lightbar"></div>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
